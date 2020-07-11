@@ -1,0 +1,9 @@
+[Unit]
+Description=Tyrannasaurus Rest
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/deno run --allow-run 
+
+[Install]
+WantedBy=multi-user.target
