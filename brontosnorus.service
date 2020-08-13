@@ -1,0 +1,9 @@
+[Unit]
+Description=BrontoSNOREus
+
+[Service]
+Type=simple
+ExecStart=/bin/bash -c "HOME=/home/jsanders /usr/local/bin/deno run --allow-run /home/jsanders/Documents/ferm10n/brontosnorus/main.ts"
+
+[Install]
+WantedBy=multi-user.target
